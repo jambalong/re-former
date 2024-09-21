@@ -1,26 +1,5 @@
 <h1>New User!</h1>
 
-<!-- <form action="/users" method="post" accept-charset="utf-8"> -->
-<!--   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> -->
-<!--   <label for="username">Username:</label> -->
-<!--   <input type="text" name="user[username]" id="username"> -->
-<!--   <label for="email">Email:</label> -->
-<!--   <input type="email" name="user[email]" id="email"> -->
-<!--   <label for="password">Password:</label> -->
-<!--   <input type="password" name="user[password]" id="password"> -->
-<!--   <input type="submit" name="commit" value="Create User" data-disable-with="Create User"> -->
-<!-- </form> -->
-
-<%#= form_tag("/users", method:"post") do %>
-  <%#= label_tag(:username, "Username:") %>
-  <%#= text_field_tag(:username) %>
-  <%#= label_tag(:email, "Email:") %>
-  <%#= text_field_tag(:email) %>
-  <%#= label_tag(:password, "Password:") %>
-  <%#= password_field_tag(:password) %>
-  <%#= submit_tag("Create User") %>
-<%# end %>
-
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
